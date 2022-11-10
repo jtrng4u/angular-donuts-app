@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Donut</h1>
+  <p> Name: {{donut.name}}  <button (click)="addToCart(donut)">Add to Cart</button> </p>
+  <p>Calories: {{donut.calories}}</p>
+  <b>Extras:</b>
+  <ol *ngFor="let extra of donut.extras">
+    <li>{{extra}}</li>
+  </ol>
+  <img src="{{donut.photo}}" />
+</div>

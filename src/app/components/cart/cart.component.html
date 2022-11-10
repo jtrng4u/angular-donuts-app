@@ -1,0 +1,17 @@
+<h1>Shopping Cart</h1>
+
+<div class="cart">
+<table>
+  <th>Donut</th>
+  <th>Calories</th>
+  <th>Price</th>
+  <tr *ngFor="let donut of donuts">
+    <td>{{donut.name}}</td>
+    <td>{{donut.calories}}</td>
+    <td>{{1 | currency}}</td>
+  </tr>
+
+  <p>Total calories: <b>{{totalCalories()}}</b></p>
+  <p>Total price: <b> {{totalPrice() | currency}} </b></p>
+</table>
+</div>
